@@ -11,14 +11,18 @@
       type="image/x-icon"
       href="favicon.ico"
     />
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Swiper -->
     <link rel="stylesheet" href="public/css/swiper-bundle.min.css" />
+    <!-- Style Tailwind -->
     <link rel="stylesheet" href="public/css/style.css" />
     <title>Kalkulator Sampah</title>
   </head>
   <body class="mx-auto font-circular">
     <!-- Navbar section -->
-    <header class="sticky top-0 z-40  bg-general-50 mx-auto px-4 py-[9px] lg:px-16">
-      <nav class="container flex items-center justify-between">
+    <header class="sticky top-0 z-40 bg-general-50 mx-auto px-4 py-[9px] lg:px-16">
+      <nav class="flex items-center justify-between">
         <a href="/" aria-label="Go to Homepage">
           <img
             class="w-[140px] h-[40px] lg:w-[170px] lg:h-[50px]"
@@ -26,7 +30,7 @@
             alt="Kalkulator Sampah"
           />
         </a>
-        <div id="stickyItem" class="hidden  mx-auto gap-x-4 ">
+        <div id="stickyItem"  class="hidden  mx-auto gap-x-4 ">
           <div class="flex items-center">
             <p class="italic text-general-500 font-[450]">
             Diprakasai oleh :
@@ -50,7 +54,7 @@
 
         <div class="ml-auto lg:ml-0">
           <button
-            class="bg-primary-600 rounded-[4px] border border-white text-lg text-general-50 font-medium px-4 py-2 lg:px-8 lg:py-5"
+            class="bg-primary-600 rounded-[4px] border border-white text-lg text-general-50 font-medium px-4 py-2 hover:bg-primary-700 hover:text-general-100 hover:shadow-xl lg:px-8 lg:py-5"
           >
             Coba Sekarang
           </button>
@@ -88,7 +92,7 @@
      </div>
       <!-- Modal popup -->
 
-      <div
+      <div 
         class="container mx-auto flex flex-col gap-y-8 items-center"
       >
         <div class="lg:max-w-5xl">
@@ -130,12 +134,12 @@
         </div>
         <div>
           <button
-            class="bg-primary-600 rounded-[4px] border border-white text-lg text-general-50 font-medium px-4 py-2 lg:px-8 lg:py-5"
+            class="bg-primary-600 rounded-[4px] border border-white text-lg text-general-50 font-medium px-4 py-2 hover:bg-primary-700 hover:text-general-100 hover:shadow-xl lg:px-8 lg:py-5"
           >
             Buka Kalkulator Sampah
           </button>
         </div>
-        <div>
+        <div data-aos="fade-up">
           <img class="w-full" src="public/assets/hero-image.png" alt="" />
         </div>
       </div>
@@ -144,7 +148,7 @@
     <!-- About section -->
     <section class="py-8 px-4 lg:px-16 lg:py-20">
       <div class="flex flex-col lg:flex-row lg:gap-x-8">
-        <div>
+        <div data-aos="fade-right">
           <h3
             class="text-[28px] font-bold text-general-900 lg:text-4xl"
           >
@@ -159,13 +163,15 @@
             Tata Cara Perhitungan Tarif Retribusi dalam
             Penyelenggaraan Penanganan Sampah
           </p>
-          <button
-            class="my-6 rounded-[4px] border-[2px] border-primary-600 text-lg text-primary-600 font-medium px-4 py-2 lg:px-8 lg:py-5"
-          >
+          <div class="my-6">
+            <a href="#"
+            class=" rounded-[4px] border-[2px] border-primary-600 text-lg text-primary-600 font-medium px-4 py-2 hover:border-primary-800 hover:text-primary-800 hover:shadow-xl lg:px-8 lg:py-5"
+            download>
             Unduh Buku Panduan
-          </button>
+          </a>
+          </div>
         </div>
-        <div class="flex flex-col space-y-6 lg:space-y-0">
+        <div data-aos="fade-left" class="flex flex-col space-y-6 lg:space-y-0">
           <div class="flex flex-col">
             <div class="flex items-center space-x-4">
               <img src="public/assets/truck-ico.svg" alt="" />
@@ -208,14 +214,14 @@
     </section>
     <!-- About section -->
     <!-- Slider section -->
-    <section class="relative container mx-auto py-8 px-4 lg:px-16 lg:py-20">
+    <section class="relative mx-auto py-8 px-4 lg:px-16 lg:py-20">
       <div class="hidden lg:block"> 
 
         <div class=" h-[131px] w-[114px] top-3 right-60 absolute">
           <img src="public/assets/quote.svg" alt="">
         </div>
       </div>
-      <div class="relative swiper my-swiper">
+      <div data-aos="fade-up" class="relative swiper my-swiper">
         <div class="swiper-wrapper">
           <div class="swiper-slide pb-20">
             <div class="flex justify-center items-center">
@@ -316,7 +322,7 @@
 
       <div class="flex flex-col space-y-8">
         <!-- Card item  1-->
-        <div
+        <div data-aos="fade-right"
           class="flex flex-col-reverse items-center bg-general-50 p-8 rounded-[32px] shadow-[8px_16px_60px_0_rgba(12, 37, 69, 0.05)] lg:space-x-8 lg:flex-row"
         >
           <div class="w-full lg:w-1/2 lg:ml-8">
@@ -337,7 +343,7 @@
             <div class="mt-[26px] flex items-center cursor-pointer">
               <a
                 href="#"
-                class="text-sm text-primary-600 font-medium"
+                class="text-sm text-primary-600 font-medium hover:underline hover:underline-offset-4"
               >
                 Pelajari Lebih Lanjut
               </a>
@@ -353,7 +359,7 @@
           </div>
         </div>
         <!-- Card item  2-->
-        <div
+        <div data-aos="fade-left"
           class="flex flex-col items-center bg-general-50 p-8 rounded-[32px] shadow-[8px_16px_60px_0_rgba(12, 37, 69, 0.05)] lg:space-x-8 lg:flex-row"
         >
           <div class="w-full mb-3 lg:mb-0 lg:w-1/2">
@@ -377,7 +383,7 @@
             <div class="mt-[26px] flex items-center cursor-pointer">
               <a
                 href="#"
-                class="text-sm text-primary-600 font-medium"
+                class="text-sm text-primary-600 font-medium hover:underline hover:underline-offset-4"
               >
                 Pelajari Lebih Lanjut
               </a>
@@ -390,7 +396,7 @@
           </div>
         </div>
         <!-- Card item  3-->
-        <div
+        <div data-aos="fade-up"
           class="flex flex-col-reverse items-center bg-general-50 p-8 rounded-[32px] shadow-[8px_16px_60px_0_rgba(12, 37, 69, 0.05)] lg:space-x-8 lg:flex-row"
         >
           <div class="w-full lg:ml-8 lg:w-1/2">
@@ -409,7 +415,7 @@
             <div class="mt-[26px] flex items-center cursor-pointer">
               <a
                 href="#"
-                class="text-sm text-primary-600 font-medium"
+                class="text-sm text-primary-600 font-medium hover:underline hover:underline-offset-4"
               >
                 Pelajari Lebih Lanjut
               </a>
@@ -429,7 +435,7 @@
     <!-- Product section -->
     <!-- Document section -->
     <section class="pt-8 px-4 lg:px-16 lg:py-20">
-      <div class="container mx-auto">
+      <div data-aos="fade-up" class="container mx-auto">
         <div
           class="relative rounded-[32px] bg-primary-600 px-[64px] pt-[30px]"
         >
@@ -441,12 +447,14 @@
                 Dokumen Tata Cara Perhitungan Tarif Retribusi dalam
                 Penyelenggaraan Penanganan Sampah
               </h3>
-              <button
-                class="mt-10 flex items-center bg-general-50 px-6 py-4 rounded text-primary-600 text-lg font-medium"
+              <a
+                 href="#"
+                class="mt-10 w-fit flex items-center bg-general-50 px-6 py-4 rounded text-primary-600 text-lg font-medium hover:text-primary-800 hover:border-l-general-800 hover:shadow-xl"
+                download
               >
-                Unduh Dokumen
+                Unduh Dokumen &nbsp;
                 <img src="public/assets/download-line.svg" alt="" />
-              </button>
+              </a>
             </div>
             <div class="mt-10 lg:mt-0">
               <img
@@ -489,14 +497,14 @@
               </p>
             </div>
           </div>
-          <div class="space-y-[21px] text-sm">
+          <div class="flex flex-col space-y-[21px] text-sm w-fit">
             <p class="text-base font-bold text-primary-600">Unduh</p>
-            <p class="text-base font-bold text-general-900">
+            <a href="#" class="text-base font-bold text-general-900 hover:text-general-600 hover:cursor-pointer" download>
               Peraturan Mendagri
-            </p>
-            <p class="text-base font-bold text-general-900">
+            </a>
+            <a href="#" class="text-base font-bold text-general-900   hover:text-general-600 hover:cursor-pointer" download>
               Buku Panduan
-            </p>
+            </a>
           </div>
           <div>
             <p class="text-base font-bold text-primary-600">
@@ -534,6 +542,10 @@
     </footer>
     <!-- Footer -->
   </body>
+  <!-- Swiper -->
   <script src="public/js/swiper-bundle.min.js"></script>
+  <!-- AOS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!-- Main js -->
   <script src="public/js/main.js"></script>
 </html>

@@ -1,8 +1,15 @@
+AOS.init();
+
 // Swiper js
 const swiper = new Swiper('.my-swiper', {
   loop: true,
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
   pagination: {
     el: '.swiper-pagination',
+    clickable: true,
   },
   navigation: {
     nextEl: '.swiper-button-next',
@@ -13,8 +20,6 @@ const swiper = new Swiper('.my-swiper', {
 // Sticku navbar condition
 window.addEventListener('scroll', function () {
   const navbarItem = document.getElementById('stickyItem');
-
-  // Jika pengguna scroll lebih dari 100px, tampilkan item
   if (window.innerWidth < 769) {
     return;
   }
