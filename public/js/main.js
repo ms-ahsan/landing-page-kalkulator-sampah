@@ -23,7 +23,7 @@ window.addEventListener('scroll', function () {
   if (window.innerWidth < 769) {
     return;
   }
-  if (window.scrollY >= 90) {
+  if (window.scrollY >= 490) {
     navbarItem.classList.remove('hidden');
   } else {
     navbarItem.classList.add('hidden');
