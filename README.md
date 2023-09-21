@@ -6,7 +6,7 @@
 # Menambahkan file download
 
 1. taruh file ke dalam directory atau alamat
-2. masukan url file ke href pada tag <a></a>
+2. masukan url file ke href pada tag `<a></a>`
 
-Untuk menghilangkan fungsi download hapus attribut 'download' yang ada pada tag <a></a>
-<a href="#" download></a>
+Untuk menghilangkan fungsi download hapus attribut 'download' yang ada pada tag `<a></a>`
+`<a href="#" download></a>`
